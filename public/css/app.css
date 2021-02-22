@@ -10948,6 +10948,10 @@ a.text-dark:focus {
   background-color: #F1F0F7;
 }
 
+.bg-purple {
+  background-color: #4D40FF;
+}
+
 .light-text {
   color: #969696;
 }
@@ -10956,8 +10960,28 @@ a.text-dark:focus {
   transform: rotate(180deg);
 }
 
+.border-transparent {
+  border: 2px solid transparent;
+}
+
+.border-yellow {
+  border: 2px solid #FBBC05;
+}
+
+.text-purple {
+  color: #4D40FF;
+}
+
+.max-cats-width {
+  max-width: 750px;
+}
+
 .landing-page .col-md-6 {
   min-height: 100vh;
+}
+
+.landing-page .left-side .contact {
+  flex-wrap: wrap;
 }
 
 .landing-page .left-side .contact .social-separate {
@@ -10966,8 +10990,117 @@ a.text-dark:focus {
   background-color: #BBBBBB;
 }
 
-.landing-page .right-side .to-you {
-  margin-top: 40px;
+.landing-page .right-side #selectCategoryAlert {
+  display: none;
+}
+
+.landing-page .right-side .default-design {
+  margin-top: 50px;
+}
+
+.landing-page .right-side .default-design .cats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.landing-page .right-side .default-design .cats .cat {
+  position: relative;
+  transition: border 0.5s ease-in-out;
+}
+
+.landing-page .right-side .default-design .cats .cat .text {
+  line-height: 1.2em;
+}
+
+.landing-page .right-side .default-design .cats .cat .category-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  left: 0px;
+  height: 100%;
+  top: 0px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.landing-page .right-side .default-design .cats .cat::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='490.434px' height='490.433px' viewBox='0 0 490.434 490.433' style='enable-background:new 0 0 490.434 490.433; fill:%23FFF;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M472.003,58.36l-13.132-11.282c-21.798-18.732-54.554-16.644-73.799,4.697L165.39,295.359l-66.312-57.112 c-21.775-18.753-54.536-16.707-73.804,4.611l-11.611,12.848c-9.416,10.413-14.305,24.149-13.595,38.18 c0.717,14.023,6.973,27.188,17.402,36.6l121.553,111.311c10.524,9.883,24.628,15.037,39.044,14.272 c14.416-0.763,27.894-7.386,37.311-18.329l262.245-304.71c9.162-10.646,13.717-24.494,12.661-38.496 C489.229,80.522,482.655,67.512,472.003,58.36z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-color: #FBBC05;
+  padding: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background-size: 100% 57%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.landing-page .right-side .default-design .cats .cat.active {
+  border-color: #FBBC05;
+}
+
+.landing-page .right-side .default-design .cats .cat.active::after {
+  opacity: 1;
+}
+
+.landing-page .right-side .confirm {
+  margin-top: 70px;
+}
+
+.landing-page .right-side .confirm p {
+  max-width: 400px;
+}
+
+.landing-page .right-side .confirm .input-group input {
+  padding: 30px;
+  font-size: 1.3em;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.landing-page .right-side .confirm .input-group ::-moz-placeholder {
+  color: #afafaf;
+}
+
+.landing-page .right-side .confirm .input-group :-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.landing-page .right-side .confirm .input-group ::placeholder {
+  color: #afafaf;
+}
+
+.landing-page .right-side .confirm .input-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 415px) {
+  .contact {
+    display: block !important;
+  }
+
+  .contact .social-separate {
+    display: none !important;
+  }
+
+  .contact div {
+    text-align: center;
+  }
 }
 
 
