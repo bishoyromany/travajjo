@@ -3,7 +3,7 @@
 @section('content')
 <div class="row landing-page m-0 bg-white">
     <div class="col-md-6 col-12 left-side d-flex justify-content-between flex-column">
-        <div class="contact d-flex justify-content-center w-100">
+        <div class="contact justify-content-center w-100 d-none d-md-flex">
             <div class="email py-3">
                 <div class="icon">
                     <img src="{{asset("images/email.png")}}" alt="email" class="img-fluid">
@@ -90,6 +90,28 @@
                     <button class="input-group-prepend btn border-0 bg-purple">
                         <span class="text-white">Get Catalogue</span>
                     </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact d-flex justify-content-center w-100 d-md-none d-lg-none">
+            <div class="email py-3">
+                <div class="icon">
+                    <img src="{{asset("images/email.png")}}" alt="email" class="img-fluid">
+                    <span class="text ml-2">
+                        <a href="mailto:support@tavejjo.com" class="text-dcoration-none text-dark font-weight-bold">support@tavejjo.com</a>
+                    </span>
+                </div>
+            </div>
+            <div class="sep my-3 mx-4 social-separate">
+                <div></div>
+            </div>
+            <div class="whatsapp py-3">
+                <div class="icon">
+                    <img src="{{asset("images/whatsapp.png")}}" alt="whatsapp" class="img-fluid">
+                    <span class="text text-dcoration-none text-dark font-weight-bold ml-2">
+                        +91 987 654 3210
+                    </span>
                 </div>
             </div>
         </div>

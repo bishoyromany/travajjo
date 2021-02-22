@@ -136,14 +136,25 @@
     }
 }
 
-@media screen and (max-width: 415px){
-    .contact{
-        display: block !important;
-        .social-separate{
-            display: none !important;
+@media screen and(max-width: 777px){
+    .landing-page{
+        .col-md-6{
+            min-height: 10px;
         }
-        div{
-            text-align: center;
+    }
+}
+
+@media screen and (max-width: 415px){
+
+    .right-side{
+        .contact{
+            display: block !important;
+            .social-separate{
+                display: none !important;
+            }
+            div{
+                text-align: center;
+            }
         }
     }
 }

@@ -11089,16 +11089,22 @@ a.text-dark:focus {
   padding: 0px 30px;
 }
 
+@media screen and (max-width: 777px) {
+  .landing-page .col-md-6 {
+    min-height: 10px;
+  }
+}
+
 @media screen and (max-width: 415px) {
-  .contact {
+  .right-side .contact {
     display: block !important;
   }
 
-  .contact .social-separate {
+  .right-side .contact .social-separate {
     display: none !important;
   }
 
-  .contact div {
+  .right-side .contact div {
     text-align: center;
   }
 }
