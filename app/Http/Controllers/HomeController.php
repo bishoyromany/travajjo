@@ -24,20 +24,20 @@ class HomeController extends Controller
                         'icon' => 'jew.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry2',
-                        'icon' => 'jew.png'
+                        'name' => 'Beauty Products',
+                        'icon' => 'fashion.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry3',
-                        'icon' => 'jew.png'
+                        'name' => 'Clothing',
+                        'icon' => 'cloth.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry4',
-                        'icon' => 'jew.png'
+                        'name' => 'Organic Foods',
+                        'icon' => 'organic.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry5',
-                        'icon' => 'jew.png'
+                        'name' => 'Perfume',
+                        'icon' => 'perfume.png'
                     ],
                 ]
             ],
@@ -46,24 +46,24 @@ class HomeController extends Controller
                 'class' => 'to-your-surroundings default-design',
                 'cats' => [
                     [
-                        'name' => 'Fashion Jewelry6',
-                        'icon' => 'jew.png'
+                        'name' => 'Paintings',
+                        'icon' => 'paint.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry7',
-                        'icon' => 'jew.png'
+                        'name' => 'Crockery',
+                        'icon' => 'crock.png'
                     ],
                     [
                         'name' => 'Fashion Jewelry8',
                         'icon' => 'jew.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry9',
-                        'icon' => 'jew.png'
+                        'name' => 'Home Decor',
+                        'icon' => 'home.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry10',
-                        'icon' => 'jew.png'
+                        'name' => 'Office Decor',
+                        'icon' => 'office.png'
                     ],
                 ]
             ],
