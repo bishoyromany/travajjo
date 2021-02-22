@@ -11000,7 +11000,7 @@ a.text-dark:focus {
 
 .landing-page .right-side .default-design .cats {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;

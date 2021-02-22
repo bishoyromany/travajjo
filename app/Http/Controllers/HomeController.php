@@ -80,6 +80,8 @@ class HomeController extends Controller
             'cats' => 'required|array'
         ]);
 
+        $request->merge(['cats' => json_encode($request->cats)]);
+
         Guest::create($request->only('email', 'cats'));
 
         return redirect()->back()->with('success', ['Thanks , for sharing your request . We will get back to you soon with the requested catalogs']);

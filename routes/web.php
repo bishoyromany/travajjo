@@ -18,6 +18,11 @@ Route::auth(['register' => false]);
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/', [App\Http\Controllers\HomeController::class, 'store']);
 
-Route::group(['middle' => 'auth', 'prefix' => 'admin'], function () {
-    Route::get('dashboard', [App\Http\Controllers\UserController::class, 'dashboard'])->middleware('auth');
+// Route::group(['middle' => 'auth', 'prefix' => 'admin'], function () {
+//     Route::get('dashboard', [App\Http\Controllers\UserController::class, 'dashboard'])->middleware('auth');
+// });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });

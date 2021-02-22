@@ -15,7 +15,7 @@ class Guest extends Model
         'cats', 'email'
     ];
 
-    protected $casts = [
-        'cats' => 'array'
-    ];
+    // protected $casts = [
+    //     'cats' => 'array'
+    // ];
 }
