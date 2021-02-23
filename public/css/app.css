@@ -10973,7 +10973,7 @@ a.text-dark:focus {
 }
 
 .max-cats-width {
-  max-width: 750px;
+  max-width: 690px;
 }
 
 .landing-page .col-md-6 {
@@ -10987,7 +10987,7 @@ a.text-dark:focus {
 .landing-page .left-side .contact .social-separate {
   width: 3px;
   height: 25px;
-  background-color: #BBBBBB;
+  background-color: #bbbbbb;
 }
 
 .landing-page .right-side #selectCategoryAlert {
@@ -11008,14 +11008,15 @@ a.text-dark:focus {
 
 .landing-page .right-side .default-design .cats .cat {
   position: relative;
-  min-width: 125px;
-  max-width: 125px;
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 140px;
   transition: border 0.5s ease-in-out;
 }
 
 .landing-page .right-side .default-design .cats .cat .text {
   line-height: 1.3em;
-  color: #645FA2;
+  color: #645fa2;
 }
 
 .landing-page .right-side .default-design .cats .cat .category-checkbox {
@@ -11090,6 +11091,12 @@ a.text-dark:focus {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   padding: 0px 30px;
+  background-color: #8279FF;
+  font-size: 1.2em;
+}
+
+.landing-page .right-side .confirm .input-group button:hover {
+  background-color: #4D40FF;
 }
 
 @media screen and (max-width: 777px) {

@@ -54,16 +54,16 @@ class HomeController extends Controller
                         'icon' => 'crock.png'
                     ],
                     [
-                        'name' => 'Fashion Jewelry8',
-                        'icon' => 'jew.png'
-                    ],
-                    [
                         'name' => 'Home Decor',
                         'icon' => 'home.png'
                     ],
                     [
                         'name' => 'Office Decor',
                         'icon' => 'office.png'
+                    ],
+                    [
+                        'name' => 'Esential Oils',
+                        'icon' => 'oil.png'
                     ],
                 ]
             ],
