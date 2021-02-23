@@ -10999,20 +10999,23 @@ a.text-dark:focus {
 }
 
 .landing-page .right-side .default-design .cats {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .landing-page .right-side .default-design .cats .cat {
   position: relative;
+  min-width: 125px;
+  max-width: 125px;
   transition: border 0.5s ease-in-out;
 }
 
 .landing-page .right-side .default-design .cats .cat .text {
-  line-height: 1.2em;
+  line-height: 1.3em;
+  color: #645FA2;
 }
 
 .landing-page .right-side .default-design .cats .cat .category-checkbox {
@@ -11036,11 +11039,11 @@ a.text-dark:focus {
   left: 0px;
   width: 25px;
   height: 25px;
-  background-size: 100% 57%;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  background-size: 60% 60%;
 }
 
 .landing-page .right-side .default-design .cats .cat.active {

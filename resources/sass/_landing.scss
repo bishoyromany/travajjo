@@ -56,17 +56,24 @@
         .default-design{
             margin-top: 50px;
             .cats{
-                display: grid;
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
                 // grid-template-columns: repeat(5, 1fr);
-                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                grid-template-rows: 1fr;
-                grid-column-gap: 10px;
-                grid-row-gap: 10px;
+                // grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                // grid-template-rows: 1fr;
+                // grid-column-gap: 10px;
+                // grid-row-gap: 10px;
                 .cat{
                     position: relative;
+                    min-width: 125px;
+                    max-width: 125px;
                     transition: border 0.5s ease-in-out;
                     .text{
-                        line-height: 1.2em;
+                        line-height: 1.3em;
+                        color: #645FA2;
                     }
                     .category-checkbox{
                         position: absolute;
@@ -89,11 +96,11 @@
                         left: 0px;
                         width: 25px;
                         height: 25px;
-                        background-size: 100% 57%;
                         background-repeat: no-repeat;
                         background-position: center;
                         opacity: 0;
                         transition: opacity 0.5s ease-in-out;
+                        background-size: 60% 60%;
                     }
 
                     &.active{
@@ -143,6 +150,18 @@
         }
     }
 }
+
+// @media screen and(max-width: 470px){
+//     .landing-page{
+//         .cats{
+//             .cat{
+//                 &:last-of-type{
+//                     grid-column: 1 / -1;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media screen and (max-width: 415px){
 
