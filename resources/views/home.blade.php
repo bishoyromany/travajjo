@@ -46,7 +46,7 @@
             @include("components.alerts")
 
             <div class="alert alert-danger alert-dismissible fade show mt-3 max-cats-width mx-auto" id="selectCategoryAlert" role="alert">
-                Please select any <strong>category</strong> to get the catalog
+                Pleast choose atleast one <strong>category</strong> to request for catalog
                 <button type="button" class="close">
                   <span>&times;</span>
                 </button>

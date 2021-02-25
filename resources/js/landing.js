@@ -22,6 +22,12 @@ $(document).ready(() => {
     $("#landingPageForm").submit(function(e) {
         if ($(".category-checkbox:checked").length < 1) {
             $("#selectCategoryAlert").fadeIn();
+            $([document.documentElement, document.body]).animate(
+                {
+                    scrollTop: $("#selectCategoryAlert").offset().top
+                },
+                1000
+            );
             e.preventDefault();
         }
     });
