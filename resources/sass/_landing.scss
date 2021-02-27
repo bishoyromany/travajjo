@@ -4,6 +4,8 @@
 
 .bg-purple {
     background-color: $purple;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .light-text {
@@ -11,6 +13,10 @@
 }
 
 .pretty-subtitle {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-color;
     .right {
         transform: rotate(180deg);
     }
@@ -29,22 +35,64 @@
 }
 
 .max-cats-width {
-    max-width: 690px;
+    max-width: 560px;
 }
 
 .landing-page {
-    .col-md-6 {
-        min-height: 100vh;
-    }
-    .left-side {
-        .contact {
-            flex-wrap: wrap;
-            .social-separate {
-                width: 3px;
-                height: 25px;
-                background-color: #bbbbbb;
+    width: 100vw;
+    .contact {
+        flex-wrap: wrap;
+        .social-separate {
+            width: 3px;
+            height: 25px;
+            background-color: #bbbbbb;
+        }
+        & > div{
+            &.social-separate{
+                margin-top: 15px;
+            }
+            &.email,&.whatsapp{
+                padding-top: 15px;
+            }
+            *{
+                font-size: 14px;
+                font-weight: 600;
+                color: $text-color;
             }
         }
+    }
+    .copyright {
+        font-size: 13px;
+        font-weight: normal;
+        color: $text-color;
+    }
+    .logo{
+        img{
+            width: 198px;
+            height: 270px;
+        }
+    }
+
+    .title{
+        h1{
+            margin-top: 30px;
+            margin-bottom: 0px;
+            font-size: 30px;
+            font-weight: bold;
+            color: $text-color;
+            letter-spacing: 0.1rem;
+        }
+        p{
+            margin-top: 10px;
+            color: #888;
+            font-weight: normal;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .left-side {
+
     }
 
     .right-side {
@@ -53,27 +101,29 @@
         }
 
         .default-design {
-            margin-top: 50px;
             .cats {
                 display: flex;
                 gap: 10px;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                // grid-template-columns: repeat(5, 1fr);
-                // grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                // grid-template-rows: 1fr;
-                // grid-column-gap: 10px;
-                // grid-row-gap: 10px;
                 .cat {
                     position: relative;
-                    min-width: 130px;
-                    max-width: 130px;
-                    min-height: 140px;
+                    min-width: 104px;
+                    max-width: 104px;
+                    min-height: 114px;
+                    max-height: 114px;
                     transition: border 0.5s ease-in-out;
+                    border-radius: 4px;
+                    border: 1px solid #DCDBEB;
+                    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
                     .text {
                         line-height: 1.3em;
-                        color: #645fa2;
+                    }
+                    .icon{
+                        width: 40px;
+                        height: 40px;
+                        margin: 10px auto;
                     }
                     .category-checkbox {
                         position: absolute;
@@ -112,21 +162,34 @@
                 }
             }
         }
+        .to-you{
+            margin-bottom: 30px;
+        }
+        .to-your-surroundings{
+            margin-bottom: 40px;
+        }
 
         .confirm {
-            margin-top: 70px;
+            margin-bottom: 10px;
             p {
-                max-width: 400px;
+                color: #888;
+                font-weight: normal;
+                font-size: 14px;
+                margin-bottom: 30px;
+                margin-bottom: 15px;
+                max-width: 350px;
             }
             .input-group {
                 input {
-                    padding: 30px;
-                    font-size: 1.3em;
+                    padding: 20px;
+                    font-size: 14px;
                     border-top-left-radius: 25px;
                     border-bottom-left-radius: 25px;
                 }
                 ::placeholder {
-                    color: rgb(175, 175, 175);
+                    color: #BBB;
+                    font-size: 14px;
+                    font-weight: normal;
                 }
                 button {
                     display: flex;
@@ -136,15 +199,30 @@
                     border-bottom-right-radius: 25px;
                     border-top-left-radius: 0px;
                     border-bottom-left-radius: 0px;
-                    padding: 0px 30px;
-                    background-color: #8279FF;
-                    font-size: 1.2em;
+                    padding: 0px 20px;
+                    background-color: rgba(77,64,255,0.7);
+                    font-size: 14px;
+                    span{
+                        color: rgba(255,255,255,0.8);
+                    }
                     &:hover{
-                        background-color: #4D40FF;
+                        background-color: rgba(77,64,255,1);
+                        span{
+                        color: rgba(255,255,255);
+                        }
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 777px){
+    main{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(241,240,247,1) 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f1f0f7",GradientType=1);
+        min-height: 100vh;
     }
 }
 
@@ -155,18 +233,6 @@
         }
     }
 }
-
-// @media screen and(max-width: 470px){
-//     .landing-page{
-//         .cats{
-//             .cat{
-//                 &:last-of-type{
-//                     grid-column: 1 / -1;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @media screen and (max-width: 415px) {
     .right-side {

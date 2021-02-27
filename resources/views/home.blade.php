@@ -4,29 +4,29 @@
 <div class="row landing-page m-0 bg-white">
     <div class="col-md-6 col-12 left-side d-flex justify-content-between flex-column">
         <div class="contact justify-content-center w-100 d-none d-md-flex">
-            <div class="email py-3">
+            <div class="email">
                 <div class="icon">
-                    <img src="{{asset("images/email.png")}}" alt="email" class="img-fluid">
+                    <img src="{{asset("images/ic-email.svg")}}" alt="email" class="img-fluid">
                     <span class="text ml-2">
-                        <a href="mailto:support@tavejjo.com" class="text-dcoration-none text-dark font-weight-bold">support@tavejjo.com</a>
+                        <a href="mailto:support@tavejjo.com" class="text-dcoration-none text-dark">support@tavejjo.com</a>
                     </span>
                 </div>
             </div>
-            <div class="sep my-3 mx-4 social-separate">
+            <div class="sep mx-4 social-separate">
                 <div></div>
             </div>
-            <div class="whatsapp py-3">
+            <div class="whatsapp">
                 <div class="icon">
-                    <img src="{{asset("images/whatsapp.png")}}" alt="whatsapp" class="img-fluid">
-                    <span class="text text-dcoration-none text-dark font-weight-bold ml-2">
+                    <img src="{{asset("images/ic-whatsapp.svg")}}" alt="whatsapp" class="img-fluid">
+                    <span class="text text-dcoration-none text-dark ml-2">
                         +91 987 654 3210
                     </span>
                 </div>
             </div>
         </div>
 
-        <div class="logo text-center my-4">
-            <img src="{{asset("images/logo.png")}}" alt="logo" class="img-fluid">
+        <div class="logo text-center my-4 text-center">
+            <img src="{{asset("images/tavajjo-logo-final.svg")}}" alt="logo" class="img-fluid">
         </div>
 
         <div class="copyright d-none d-md-block text-center mb-3">
@@ -36,10 +36,10 @@
     <form class="col-md-6 col-12 bg-main right-side justify-content-around d-flex flex-column" id="landingPageForm" method="POST">
         @csrf
         <div class="title text-center mt-4">
-            <h1 class="font-weight-bold">
+            <h1>
                 Unveil your own magnificence
             </h1>
-            <p class="lead light-text mb-0">Buy products that create grandeur in your life</p>
+            <p>Buy products that create grandeur in your life</p>
         </div>
 
         <div class="cats-container">
@@ -51,22 +51,23 @@
                   <span>&times;</span>
                 </button>
             </div>
+
             @foreach($cats as $cat)
                 <div class="{{$cat['class']}} w-100 max-cats-width mx-auto">
                     <div class="title text-center">
-                        <h5 class="pretty-subtitle font-weight-bold">
+                        <h5 class="pretty-subtitle">
                             <img src="{{asset("images/pretty-line.png")}}" class="left mr-2" alt="Pretty Line">
                             {{$cat['title']}}
                             <img src="{{asset("images/pretty-line.png")}}" class="right ml-2" alt="Pretty Line">
                         </h5>
 
-                        <div class="cats mt-2">
+                        <div class="cats">
                             @foreach($cat['cats'] as $c)
-                                <div class="cat shadow py-3 px-4 border-transparent bg-white rounded">
+                                <div class="cat px-4 border-transparent bg-white">
                                     <div class="icon text-center">
                                         <img src="{{asset("images/".$c['icon'])}}" alt="{{$c['name']}}">
                                     </div>
-                                    <div class="text text-purple lead mt-2">
+                                    <div class="text text-purple">
                                         {{$c['name']}}
                                     </div>
                                     <input class="category-checkbox" type="checkbox" name="cats[]" value="{{$c['name']}}">
@@ -81,14 +82,14 @@
         
         <div class="confirm text-center w-100 max-cats-width mx-auto">
             <div class="w-100">
-                <p class="lead light-text mx-auto">
+                <p class="mx-auto">
                     Enter the email address or mobile number below to get the catalogue for selected products
                 </p>
     
                 <div class="input-group w-100 mb-3">
                     <input name="email" type="text" class="form-control" id="email" placeholder="Email address or Mobile number" aria-describedby="inputGroupPrepend2" required>
                     <button class="input-group-prepend btn border-0 bg-purple">
-                        <span class="text-white">Get Catalogue</span>
+                        <span>Get Catalogue</span>
                     </button>
                 </div>
             </div>
@@ -97,7 +98,7 @@
         <div class="contact d-flex justify-content-center w-100 d-md-none d-lg-none">
             <div class="email py-3">
                 <div class="icon">
-                    <img src="{{asset("images/email.png")}}" alt="email" class="img-fluid">
+                    <img src="{{asset("images/ic-email.svg")}}" alt="email" class="img-fluid">
                     <span class="text ml-2">
                         <a href="mailto:support@tavejjo.com" class="text-dcoration-none text-dark font-weight-bold">support@tavejjo.com</a>
                     </span>
@@ -108,7 +109,7 @@
             </div>
             <div class="whatsapp py-3">
                 <div class="icon">
-                    <img src="{{asset("images/whatsapp.png")}}" alt="whatsapp" class="img-fluid">
+                    <img src="{{asset("images/ic-whatsapp.svg")}}" alt="whatsapp" class="img-fluid">
                     <span class="text text-dcoration-none text-dark font-weight-bold ml-2">
                         +91 987 654 3210
                     </span>

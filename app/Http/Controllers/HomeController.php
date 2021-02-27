@@ -21,23 +21,23 @@ class HomeController extends Controller
                 'cats' => [
                     [
                         'name' => 'Fashion Jewelry',
-                        'icon' => 'jew.png'
+                        'icon' => 'ic-fashion-jewelry.svg'
                     ],
                     [
                         'name' => 'Beauty Products',
-                        'icon' => 'fashion.png'
+                        'icon' => 'ic-beauty-product.svg'
                     ],
                     [
                         'name' => 'Clothing',
-                        'icon' => 'cloth.png'
+                        'icon' => 'ic-clothings.svg'
                     ],
                     [
                         'name' => 'Organic Foods',
-                        'icon' => 'organic.png'
+                        'icon' => 'ic-organic-food.svg'
                     ],
                     [
                         'name' => 'Perfume',
-                        'icon' => 'perfume.png'
+                        'icon' => 'ic-perfume.svg'
                     ],
                 ]
             ],
@@ -47,23 +47,23 @@ class HomeController extends Controller
                 'cats' => [
                     [
                         'name' => 'Paintings',
-                        'icon' => 'paint.png'
+                        'icon' => 'ic-paintings.svg'
                     ],
                     [
                         'name' => 'Crockery',
-                        'icon' => 'crock.png'
+                        'icon' => 'ic-crockery.svg'
                     ],
                     [
                         'name' => 'Home Decor',
-                        'icon' => 'home.png'
+                        'icon' => 'ic-home-decor.svg'
                     ],
                     [
                         'name' => 'Office Decor',
-                        'icon' => 'office.png'
+                        'icon' => 'ic-office-decor.svg'
                     ],
                     [
                         'name' => 'Esential Oils',
-                        'icon' => 'oil.png'
+                        'icon' => 'ic-essential-oils.svg'
                     ],
                 ]
             ],
