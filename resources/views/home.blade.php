@@ -37,7 +37,7 @@
         @csrf
         <div class="title text-center mt-4">
             <h1>
-                Unveil your own magnificence Now!
+                Unveil your own magnificence now!
             </h1>
             <p>Select single or multiple product category</p>
         </div>

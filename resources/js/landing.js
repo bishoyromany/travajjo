@@ -55,5 +55,27 @@ $(document).ready(() => {
             .fadeOut();
     });
 
+    setTimeout(() => {
+        if ($(".landing-page").width() > window.innerWidth) {
+            $(".landing-page").css({
+                "overflow-x": "hidden"
+            });
+        } else {
+            $(".landing-page").css({
+                "overflow-x": "auto"
+            });
+        }
+
+        if ($(".landing-page").height() > window.innerHeight) {
+            $(".landing-page").css({
+                "overflow-y": "hidden"
+            });
+        } else {
+            $(".landing-page").css({
+                "overflow-y": "auto"
+            });
+        }
+    }, 500);
+
     console.log("I'm Ready");
 });

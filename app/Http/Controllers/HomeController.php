@@ -84,6 +84,6 @@ class HomeController extends Controller
 
         Guest::create($request->only('email', 'cats'));
 
-        return redirect()->back()->with('success', ['Thanks you! for sharing your details. We will reach out to you with the requested catalogue.']);
+        return redirect()->back()->with('success', ['Thank you! for sharing your details. We will reach out to you with the requested catalogue.']);
     }
 }
