@@ -16,7 +16,7 @@ class HomeController extends Controller
     {
         $cats = [
             [
-                'title' => 'To You',
+                'title' => 'For You',
                 'class' => 'to-you default-design',
                 'cats' => [
                     [
@@ -36,13 +36,13 @@ class HomeController extends Controller
                         'icon' => 'ic-organic-food.svg'
                     ],
                     [
-                        'name' => 'Perfume',
+                        'name' => 'Perfumes',
                         'icon' => 'ic-perfume.svg'
                     ],
                 ]
             ],
             [
-                'title' => 'To Your Surroundings',
+                'title' => 'For Your Surroundings',
                 'class' => 'to-your-surroundings default-design',
                 'cats' => [
                     [
@@ -62,7 +62,7 @@ class HomeController extends Controller
                         'icon' => 'ic-office-decor.svg'
                     ],
                     [
-                        'name' => 'Esential Oils',
+                        'name' => 'Essential Oils',
                         'icon' => 'ic-essential-oils.svg'
                     ],
                 ]
@@ -84,6 +84,6 @@ class HomeController extends Controller
 
         Guest::create($request->only('email', 'cats'));
 
-        return redirect()->back()->with('success', ['Thanks , for sharing your request . We will get back to you soon with the requested catalogs']);
+        return redirect()->back()->with('success', ['Thanks you! for sharing your details. We will reach out to you with the requested catalogue.']);
     }
 }

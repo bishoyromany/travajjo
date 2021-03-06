@@ -8,7 +8,7 @@
                 <div class="icon">
                     <img src="{{asset("images/ic-email.svg")}}" alt="email" class="img-fluid">
                     <span class="text ml-2">
-                        <a href="mailto:support@tavejjo.com" class="text-dcoration-none text-dark">support@tavejjo.com</a>
+                        <a href="mailto:info@tavajjo.com" class="text-dcoration-none text-dark">info@tavajjo.com</a>
                     </span>
                 </div>
             </div>
@@ -37,16 +37,23 @@
         @csrf
         <div class="title text-center mt-4">
             <h1>
-                Unveil your own magnificence
+                Unveil your own magnificence Now!
             </h1>
-            <p>Buy products that create grandeur in your life</p>
+            <p>Select single or multiple product category</p>
         </div>
 
         <div class="cats-container">
             @include("components.alerts")
 
             <div class="alert alert-danger alert-dismissible fade show mt-3 max-cats-width mx-auto" id="selectCategoryAlert" role="alert">
-                Pleast choose atleast one <strong>category</strong> to request for catalog
+                Please choose at least one <strong>category</strong> to request for catalogue
+                <button type="button" class="close">
+                  <span>&times;</span>
+                </button>
+            </div>
+
+            <div class="alert alert-warning alert-dismissible fade show mt-3 max-cats-width mx-auto" id="emailPhoneAlert" role="alert">
+                Please enter a valid <strong>email address</strong> or <strong>phone number</strong>
                 <button type="button" class="close">
                   <span>&times;</span>
                 </button>
@@ -83,7 +90,7 @@
         <div class="confirm text-center w-100 max-cats-width mx-auto">
             <div class="w-100">
                 <p class="mx-auto">
-                    Enter the email address or mobile number below to get the catalogue for selected products
+                    Hurry Up! to enter email address or mobile number below to get exclusive catalogue for selected products.
                 </p>
     
                 <div class="input-group w-100 mb-3">
@@ -100,7 +107,7 @@
                 <div class="icon">
                     <img src="{{asset("images/ic-email.svg")}}" alt="email" class="img-fluid">
                     <span class="text ml-2">
-                        <a href="mailto:support@tavejjo.com" class="text-dcoration-none text-dark font-weight-bold">support@tavejjo.com</a>
+                        <a href="mailto:info@tavajjo.com" class="text-dcoration-none text-dark font-weight-bold">info@tavajjo.com</a>
                     </span>
                 </div>
             </div>
