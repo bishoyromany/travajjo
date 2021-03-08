@@ -19,7 +19,7 @@
                 <div class="icon">
                     <img src="{{asset("images/ic-whatsapp.svg")}}" alt="whatsapp" class="img-fluid">
                     <span class="text text-dcoration-none text-dark ml-2">
-                        +91 987 654 3210
+                        +91 844 8907 844
                     </span>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                 <div class="icon">
                     <img src="{{asset("images/ic-whatsapp.svg")}}" alt="whatsapp" class="img-fluid">
                     <span class="text text-dcoration-none text-dark font-weight-bold ml-2">
-                        +91 987 654 3210
+                        +91 844 8907 844
                     </span>
                 </div>
             </div>
