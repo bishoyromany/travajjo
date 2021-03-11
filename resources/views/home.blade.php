@@ -70,7 +70,7 @@
 
                         <div class="cats">
                             @foreach($cat['cats'] as $c)
-                                <div class="cat px-4 border-transparent bg-white">
+                                <div class="cat px-2 border-transparent bg-white">
                                     <div class="icon text-center">
                                         <img src="{{asset("images/".$c['icon'])}}" alt="{{$c['name']}}">
                                     </div>
